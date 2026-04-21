@@ -1,5 +1,5 @@
-import { Check, Lock } from 'lucide-react';
 import type { Day } from '@/lib/types';
+import { Check, Lock } from 'lucide-react';
 
 interface SidebarProps {
   days: Day[];
@@ -18,17 +18,11 @@ export default function Sidebar({
       <div
         className="absolute inset-0 scale-110"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80')",
+          backgroundImage: "url('/assets/bg.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'blur(28px) saturate(0.8)',
-          opacity: 0.45,
         }}
       />
-
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/90" />
 
       {/* Day list — pure Tailwind from here */}
       <div className="relative z-10 flex flex-col gap-3 pt-5 pb-8">
