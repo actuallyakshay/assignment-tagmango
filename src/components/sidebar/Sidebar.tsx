@@ -87,7 +87,7 @@ export default function Sidebar({
               onClick={() => !isLocked && onSelectDay(day.id)}
               disabled={isLocked}
               className={[
-                'w-full flex items-center justify-between px-4 bg-transparent border-0 outline-none select-none text-left',
+                'w-full flex items-center justify-between px-4 bg-transparent border-0 outline-none select-none text-left pr-6',
                 isLocked ? 'cursor-not-allowed' : 'cursor-pointer',
               ].join(' ')}
               style={{ height: ROW_HEIGHT }}
